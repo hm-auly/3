@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" id="htmlTag">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- font-awesome cdn added -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- added css link -->
+     <link rel="stylesheet" href="style,.css">
+    <title>Document</title>
+</head>
+<body class="bg-white dark:bg-gray-700 dark:text-white">
+
+    <!-- nav section start -->
+    <section >
+        <nav class="flex w-full justify-between px-2 md:py-4 md:px-10 py-3">
+            <div>
+                <img class="dark:text-white" src="images/logo.png" alt="">
+            </div>
+            <div class="hidden md:block">
+                <ul class="flex gap-8 font-bold ">
+                    <li class="transition-all hover:text-[#F44335] delay-150"><a href="#">Home</a></li>
+                    <li class="transition-all hover:text-[#F44335] delay-150"><a href="#">About Us</a></li>
+                    <li class="transition-all hover:text-[#F44335] delay-150"><a href="#">Upskill</a></li>
+                    <li class="transition-all hover:text-[#F44335] delay-150"><a href="#">Contactus</a></li>
+                </ul>
+            </div>
+            <div class="flex gap-3 items-center">
+                <button class="bg-[#F44335] py-2 px-3  rounded-lg font-semibold transition-all hover:scale-y-105">Register Interest</button>
+                <button id="moon"><i class="fa-solid fa-moon text-2xl "></i></button>
+            </div>
+        </nav>
+     </section>
+    <!-- nav section end -->
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- js -->
+    <script>
+        const htmlTag = document.getElementById("htmlTag")
+        document.getElementById("moon").addEventListener("click", function(){
+         htmlTag.classList.toggle("dark");
+        })
+      </script>
+
+ </body>   
+ </html>
